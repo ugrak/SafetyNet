@@ -16,6 +16,20 @@ def get_numbers():
         return None, None
 
 
+
+def get_letters():
+    try:
+        input_string = input("Enter a string: ")
+
+        if not input_string.isalpha():
+            raise ValueError("Input should only contain letters!")
+
+        return input_string
+
+    except ValueError:
+        return
+
+
 def main():
     option = str()
     while option != "0":
