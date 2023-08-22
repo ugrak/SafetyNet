@@ -6,6 +6,16 @@ menu = """0. Exit
 """
 
 
+def get_numbers():
+    try:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        return num1, num2
+
+    except ValueError:
+        return None, None
+
+
 def main():
     option = str()
     while option != "0":
